@@ -1,8 +1,8 @@
 # Serverless Starter
 
-The serverless starter template template is built using AWS's cloud computing services, including API Gateway, Lambda, RDS, Cognito, VPC, Subnets, S3 and Cloudfront. The infrastructure as code (IaC) approach ensures that the entire solution can be deployed and managed consistently and reliably, with changes made through version control.
+The serverless starter template is built using AWS's cloud computing services, including API Gateway, Lambda, RDS, Cognito, VPC, ACM, Route53, S3 and Cloudfront. The infrastructure as code (IaC) approach ensures that the entire solution can be deployed and managed consistently and reliably, with changes made through version control.
 
-Initially started the template in December 2022, and set a personal deadline to release a MVP before March 2023.
+Initially started the template in December 2022, and set a personal deadline to release a MVP before end of March 2023.
 
 The idea was to learn about about the technologies and frameworks used in this template, and create a template I could open and share with the world.
 
@@ -318,6 +318,6 @@ ___
 
 ## Disclaimer
 
-Please note that all images used in the text above are the property of the respective projects/technologies that are being referenced. I do not claim ownership of these images, and they are used solely for illustrative purposes to help describe the features and functionality of the starter template. If you believe that any image has been used inappropriately, please contact me immediately so that I can take appropriate action.
+Please note that all images used in the README.md are the property of the respective projects/technologies that are being referenced. I do not claim ownership of these images, and they are used solely for illustrative purposes to help describe the features and functionality of the starter template. If you believe that any image has been used inappropriately, please contact me immediately so that I can take appropriate action.
 
 ___
