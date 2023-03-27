@@ -12,7 +12,7 @@ on:
     branches:
       - master
 jobs:
-  ngsast-build:
+  scan-js:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
@@ -31,6 +31,21 @@ jobs:
       run: ${GITHUB_WORKSPACE}/sl analyze --app ShiftLeftJS --tag branch=${{ github.head_ref || steps.extract_branch.outputs.branch }} --js $(pwd)
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
+        
+  scan-tf:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Download the Qwiet CLI and set permissions
+      run: |
+        curl https://cdn.shiftleft.io/download/sl > ${GITHUB_WORKSPACE}/sl && chmod a+rx ${GITHUB_WORKSPACE}/sl
+
+    # Qwiet requires Java 1.8
+    - name: Set up Java
+      uses: actions/setup-java@v1.4.3
+      with:
+        java-version: 1.8
         
     - name: NextGen Static Analysis
       run: ${GITHUB_WORKSPACE}/sl analyze --app ShiftLeftTerraform --tag branch=${{ github.head_ref || steps.extract_branch.outputs.branch }} --terraform .
