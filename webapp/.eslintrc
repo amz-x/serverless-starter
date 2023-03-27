@@ -1,0 +1,49 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "setenv.ts"
+  ],
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "parserOptions": {
+        "ecmaVersion": 2018
+      },
+      "rules": {
+
+      }
+    },
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": ["tsconfig.*?.json"],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "rules": {
+        "@angular-eslint/component-class-suffix": [
+          "error",
+          {
+            "suffixes": ["Component", "Page"]
+          }
+        ],
+        "@angular-eslint/directive-selector": [ "error", { "type": "attribute", "prefix": "app", "style": "camelCase" } ],
+        "@angular-eslint/component-selector": [ "error", { "type": "element", "prefix": "app", "style": "kebab-case" } ],
+        "no-unused-vars": "off",
+        "no-empty-function": "off",
+        "@typescript-eslint/no-empty-function": [ "error", { "allow": [ "constructors" ] } ]
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"]
+    },
+    {
+      "files": ["*.component.ts"],
+      "extends": ["plugin:@angular-eslint/template/process-inline-templates"]
+    }
+  ]
+}

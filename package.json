@@ -1,0 +1,21 @@
+{
+  "name": "serverless-starter",
+  "version": "0.1.1",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm run webapp:install && pnpm run api:install && pnpm run tf:install",
+    "webapp:install": "npm install --prefix webapp",
+    "webapp:start": "npm run start --prefix webapp",
+    "webapp:dev": "npm run watch --prefix webapp",
+    "webapp:build": "npm run build --prefix webapp",
+    "webapp:deploy": "npm run webapp:build && npm run deploy:webapp --prefix terraform",
+    "api:install": "pnpm install --dir api",
+    "api:start": "npm run start --prefix api",
+    "api:build": "npm run build --prefix api",
+    "api:deploy": "npm run api:build && npm run deploy:api --prefix terraform",
+    "tf:install": "pnpm install --dir terraform",
+    "tf:backup": "npm run backup --prefix terraform",
+    "build": "pnpm run app:build && pnpm run api:build",
+    "setup": "pnpm run api:deploy && pnpm run deploy:app"
+  }
+}

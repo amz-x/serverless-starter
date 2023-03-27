@@ -1,0 +1,20 @@
+<!-- Render loading if authStatus is still configuring  -->
+<ng-container *ngIf="authenticator.authStatus === 'configuring'">
+  <div class="b-page-content">
+    Loading...
+  </div>
+</ng-container>
+
+<!-- Only render this if there's an authenticated user -->
+<ng-container *ngIf="authenticator.authStatus === 'authenticated'">
+  <app-dashboard>
+    <router-outlet></router-outlet>
+  </app-dashboard>
+</ng-container>
+
+<!-- Render sign-in screen otherwise with authenticator -->
+<ng-container *ngIf="authenticator.authStatus !== 'authenticated'">
+  <div class="b-page-content">
+    <amplify-authenticator [loginMechanisms]="['username']" [hideSignUp]="true"></amplify-authenticator>
+  </div>
+</ng-container>

@@ -1,0 +1,63 @@
+# compiled output
+# /*/dist
+# /*/node_modules
+dist
+node_modules
+
+# .env
+.env
+
+# Nix
+.direnv/nix-*
+
+# Nix - PostgreSQL
+.pg
+
+# Terraform
+terraform/backup
+terraform/backup.zip
+terraform/builds
+terraform/cdktf.out
+terraform/lib/config/index.ts
+terraform/.terraform
+terraform/*.tfvars.json
+terraform/*.tfstate
+terraform/*.tfstate.backup
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Angular
+.angular/cache
+
+# Serverless
+.serverless

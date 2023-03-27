@@ -1,0 +1,24 @@
+{
+  "name": "terraform",
+  "version": "1.0.1",
+  "description": "",
+  "main": "main.ts",
+  "private": true,
+  "license": "MIT",
+  "author": "Christopher Crouse <mail@amz-x.com>",
+  "scripts": {
+    "synth": "cdktf synth",
+    "deploy:api": "cdktf deploy serverless-starter-api",
+    "deploy:webapp": "cdktf deploy serverless-starter-webapp",
+    "backup": "node scripts/backup.ts"
+  },
+  "dependencies": {
+    "@cdktf/provider-aws": "~12.0.6",
+    "cdktf": "~0.15.5",
+    "constructs": "~10.1.270",
+    "path": "~0.12.7"
+  },
+  "devDependencies": {
+    "@types/node": "~18.14.6"
+  }
+}

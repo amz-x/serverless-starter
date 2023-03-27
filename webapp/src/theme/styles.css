@@ -1,0 +1,16 @@
+/* Base */
+@import './tailwindcss/base.css';
+@import './01-base/variables.css';
+@import './01-base/document.css';
+@import './01-base/font.css';
+@import './01-base/heading.css';
+@import './01-base/amplify.css';
+
+/* Components */
+@import './tailwindcss/components.css';
+@import './02-components/link.css';
+@import './02-components/button.css';
+
+/* Utilities */
+@import './tailwindcss/utilities.css';
+@import './03-utilities/border.css';

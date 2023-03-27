@@ -1,0 +1,73 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@cdktf/provider-aws': ~12.0.6
+  '@types/node': ~18.14.6
+  cdktf: ~0.15.5
+  constructs: ~10.1.270
+  path: ~0.12.7
+
+dependencies:
+  '@cdktf/provider-aws': 12.0.9_s4ymq4ic6jwdne42qj4l5cyh3e
+  cdktf: 0.15.5_constructs@10.1.276
+  constructs: 10.1.276
+  path: 0.12.7
+
+devDependencies:
+  '@types/node': 18.14.6
+
+packages:
+
+  /@cdktf/provider-aws/12.0.9_s4ymq4ic6jwdne42qj4l5cyh3e:
+    resolution: {integrity: sha512-SckeQTeuoelLBoxBm0ZGlEfy0ktfNf3oUoni4Qd8CqAgTPwP07V+k5qUx9qFfkcsgt7ewgDEbaNgOtmuztR+PA==}
+    engines: {node: '>= 14.17.0'}
+    peerDependencies:
+      cdktf: ^0.15.0
+      constructs: ^10.0.0
+    dependencies:
+      cdktf: 0.15.5_constructs@10.1.276
+      constructs: 10.1.276
+    dev: false
+
+  /@types/node/18.14.6:
+    resolution: {integrity: sha512-93+VvleD3mXwlLI/xASjw0FzKcwzl3OdTCzm1LaRfqgS21gfFtK3zDXM5Op9TeeMsJVOaJ2VRDpT9q4Y3d0AvA==}
+    dev: true
+
+  /cdktf/0.15.5_constructs@10.1.276:
+    resolution: {integrity: sha512-fcamLs7SKz+kTbQFf+fOXDGvmwT5bH4bHwp+jkVKjGTRsu6C8z5oFVAjKYm+aP1tC7sSWG967+ihSx6+uPNAGw==}
+    peerDependencies:
+      constructs: ^10.0.25
+    dependencies:
+      constructs: 10.1.276
+    dev: false
+    bundledDependencies:
+      - archiver
+      - json-stable-stringify
+      - semver
+
+  /constructs/10.1.276:
+    resolution: {integrity: sha512-NMYSBZfI0oe1InCer25WPK8X2z5ZCA2yyBrv0xH5uqs9YftE0TyKXV4pLVFf5SDNBJVXLWhq5rxRfGiGt/lvtg==}
+    engines: {node: '>= 14.17.0'}
+    dev: false
+
+  /inherits/2.0.3:
+    resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
+    dev: false
+
+  /path/0.12.7:
+    resolution: {integrity: sha512-aXXC6s+1w7otVF9UletFkFcDsJeO7lSZBPUQhtb5O0xJe8LtYhj/GxldoL09bBj9+ZmE2hNoHqQSFMN5fikh4Q==}
+    dependencies:
+      process: 0.11.10
+      util: 0.10.4
+    dev: false
+
+  /process/0.11.10:
+    resolution: {integrity: sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==}
+    engines: {node: '>= 0.6.0'}
+    dev: false
+
+  /util/0.10.4:
+    resolution: {integrity: sha512-0Pm9hTQ3se5ll1XihRic3FDIku70C+iHUdT/W926rSgHV5QgXsYbKZN8MSC3tJtSkhuROzvsQjAaFENRXr+19A==}
+    dependencies:
+      inherits: 2.0.3
+    dev: false

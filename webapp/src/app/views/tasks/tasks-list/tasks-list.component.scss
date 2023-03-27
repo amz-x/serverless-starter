@@ -1,0 +1,19 @@
+.card-header.m-actionable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+
+  .e-title {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    line-height: 2;
+  }
+
+  .e-actions {
+    display: inline-flex;
+    flex-direction: row;
+  }
+}

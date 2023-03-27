@@ -1,0 +1,41 @@
+<c-row>
+  <c-col xs="12">
+    <c-card class="mb-4">
+      <c-card-header class="m-actionable">
+        <strong class="e-title">Task List</strong>
+        <div class="e-actions">
+          <a routerLink="/tasks/new" cButton class="" color="primary" size="sm">
+            New Task
+          </a>
+        </div>
+      </c-card-header>
+      <c-card-body>
+        <p class="text-medium-emphasis small">
+          List of Tasks
+        </p>
+        <table [hover]="true" cTable>
+          <thead>
+            <tr>
+              <th scope="col" colSpan="1">Title</th>
+              <th scope="col" colSpan="2">Description</th>
+              <th scope="col" colSpan="1">Status</th>
+              <th scope="col" colSpan="1">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of $items">
+              <td colSpan="1">{{ item.title }}</td>
+              <td colSpan="2">{{ item.description }}</td>
+              <td colSpan="1">{{ item.status }}</td>
+              <td colSpan="1">
+                <a routerLink="/tasks/view/{{ item.id }}" cButton class="mb-3" color="primary" size="sm">
+                  View
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </c-card-body>
+    </c-card>
+  </c-col>
+</c-row>

@@ -1,0 +1,90 @@
+<c-row>
+  <c-col xs="12">
+    <c-card class="mb-4">
+      <c-card-header class="m-actionable">
+        <strong class="e-title">Task: {{ action }}</strong>
+        <div class="e-actions">
+          <button *ngIf="action === 'New' || action === 'Edit'" (click)="onFormSubmit()" [disabled]="!taskForm.valid" cButton class="mx-1" color="primary" size="sm">
+            Save
+          </button>
+          <a *ngIf="action === 'View'" routerLink="/tasks/edit/{{ id }}" cButton class="mx-1" color="primary" size="sm">
+            Edit
+          </a>
+          <a *ngIf="action === 'New' || action === 'View'" routerLink="/tasks/list" cButton class="mx-1" color="secondary" size="sm">
+            Cancel
+          </a>
+          <a *ngIf="action === 'Edit'" routerLink="/tasks/view/{{ id }}" cButton class="mx-1" color="secondary" size="sm">
+            Cancel
+          </a>
+        </div>
+      </c-card-header>
+      <c-card-body *ngIf="action === 'New' || action === 'Edit'">
+        <form [formGroup]="taskForm" (ngSubmit)="onFormSubmit()">
+          <c-row class="mb-3">
+            <label cLabel class="col-sm-2 col-form-label" for="title">
+              Title
+            </label>
+            <div class="col-sm-10">
+              <input cFormControl id="title" type="text" formControlName="title" />
+            </div>
+          </c-row>
+          <c-row class="mb-3">
+            <label cLabel class="col-sm-2 col-form-label" for="description">
+              Description
+            </label>
+            <div class="col-sm-10">
+              <input cFormControl id="description" type="text" formControlName="description" />
+            </div>
+          </c-row>
+          <c-row class="mb-3" *ngIf="action === 'Edit'">
+            <label cLabel class="col-sm-2 col-form-label" for="status">
+              Status
+            </label>
+            <div class="col-sm-10">
+              <select id="status" cSelect formControlName="status">
+                <option value="OPEN">Open</option>
+                <option value="IN_PROGRESS">In Progress</option>
+                <option value="DONE">Done</option>
+              </select>
+            </div>
+          </c-row>
+        </form>
+      </c-card-body>
+      <c-card-body *ngIf="action === 'View'">
+        <c-col xs="12">
+          <c-row class="mb-3">
+            <label cLabel class="col-sm-2 col-form-label">
+              Title
+            </label>
+            <div class="col-sm-10">
+              <span>{{ task.title }}</span>
+            </div>
+          </c-row>
+          <c-row class="mb-3">
+            <label cLabel class="col-sm-2 col-form-label">
+              Description
+            </label>
+            <div class="col-sm-10">
+              <span>{{ task.description }}</span>
+            </div>
+          </c-row>
+          <c-row class="mb-3">
+            <label cLabel class="col-sm-2 col-form-label">
+              Status
+            </label>
+            <div class="col-sm-10">
+              <span>{{ task.status }}</span>
+            </div>
+          </c-row>
+          <c-row class="mb-1 mt-5">
+            <div class="col-sm-12">
+              <button (click)="deleteTask()" cButton color="danger" size="sm">
+                Delete Task
+              </button>
+            </div>
+          </c-row>
+        </c-col>
+      </c-card-body>
+    </c-card>
+  </c-col>
+</c-row>

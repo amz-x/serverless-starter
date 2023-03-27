@@ -1,0 +1,30 @@
+.wrapper {
+  width: 100%;
+  @include ltr-rtl("padding-left", var(--cui-sidebar-occupy-start, 0));
+  @include ltr-rtl("padding-right", var(--cui-sidebar-occupy-end, 0));
+  will-change: auto;
+  @include transition(padding .15s);
+}
+
+/* Body & App Root */
+body, app-root {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* Non Dashboard - Page Content */
+.b-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  /* Amplify Container */
+  amplify-authenticator {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
