@@ -13,7 +13,7 @@
     "backup": "node scripts/backup.ts"
   },
   "dependencies": {
-    "@cdktf/provider-aws": "~12.0.8",
+    "@cdktf/provider-aws": "~12.0.9",
     "cdktf": "~0.15.5",
     "constructs": "~10.1.272",
     "path": "~0.12.7"
