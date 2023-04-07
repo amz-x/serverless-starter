@@ -268,7 +268,7 @@ ___
 6. Start the local development environment WEB APP:
 
     ```bash
-    npm run web:start
+    npm run webapp:start
     ```
 
 ___
