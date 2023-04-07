@@ -35,7 +35,10 @@ ___
 
 ## Roadmap
 
-- [ ] Add more notes / documentation
+- [x] Switch to devenv from nix shell
+- [x] Add more notes / documentation
+- [ ] Create project logo
+- [ ] Add acknowledgement section in README.md
 - [ ] Setup contributing guidelines
 - [ ] Improve code quality
 - [ ] Improve Dashboard with light and dark mode
@@ -56,6 +59,7 @@ ___
 | Bootstrap 5       | Web App CSS Framework             |
 | CoreUI            | Web App Boilerplate Framework     |
 | Nix               | Package Management                |
+| DevEnv            | Nix Development Environment       |
 
 ___
 
@@ -138,6 +142,9 @@ ___
 
 > Nixpkgs is a collection of over 80,000 software packages that can be installed with the Nix package manager. It also implements NixOS, a purely-functional Linux distribution.
 
+[What is Devenv?](https://devenv.sh/)
+
+> Fast, Declarative, Reproducible, and Composable Developer Environments using Nix
 ___
 
 ## Setup
@@ -184,13 +191,13 @@ sh <(curl -L https://nixos.org/nix/install) --no-daemon
 
 [Highly recommended to follow the official nix package manager installation guide.](https://nixos.org/download.html#download-nix)
 
-[Niv](https://github.com/nmattia/niv) simplifies adding and updating dependencies in Nix projects.
+___
 
-Execute the following in the root of the project directory to update dependencies:
+#### Nix Setup - Automatic Shell Activation
 
-```bash
-niv update
-```
+[Higly recommend to following the official guide to enable automatic shell activation via direnv.](https://devenv.sh/automatic-shell-activation/)
+
+___
 
 #### Resources & Manuals
 
@@ -201,6 +208,8 @@ niv update
 - [Nix - Manual](https://nixos.org/nix/manual)
 - [Nix - Github](https://github.com/NixOS/nix)
 - [Nix - Channels & Channel Status](https://status.nixos.org/)
+- [Nix - Devenv](https://devenv.sh/)
+- [Nix - Devenv Automatic Shell Activation](https://devenv.sh/automatic-shell-activation/)
 
 ___
 
@@ -226,12 +235,12 @@ ___
 
 ### Development Environment
 
-1. Open a terminal and go to the root of the project directory, and create a copy of the **.env-sample** and rename it to **.env**, and fill in the details if needed. 
+1. Open a terminal and go to the root of the project directory, and create a copy of the **.env-sample** and rename it to **.env**, and fill in the details if needed.
 
 2. Execute the following step, if **direnv** is not installed:
 
     ```bash
-    nix-shell shell.nix
+    nix develop --impure
     ```
 
 3. Install NodeJS dependencies for all sub-projects by executing the following in the root project directory:
@@ -240,19 +249,15 @@ ___
     npm install
     ```
 
-4. Setup the local development environment PostgreSQL database:
+4. Setup the local development environment services including PostgreSQL server:
 
-    Starting the PostgreSQL database
-
-    ```bash
-    pg_ctl -o "-p 5555 -k $PWD/.pg" start
-    ```
-
-    Stopping the PostgreSQL database
+    Starting all services:
 
     ```bash
-    pg_ctl stop
+    devenv up
     ```
+
+    Stopping all services, by killing the terminal which you executed `devenv up`.
 
 5. Start the local development environment API:
 
@@ -298,13 +303,13 @@ ___
       npm run api:deploy
     ```
 
-2. Deploy the APP stack from the project root directory, execute:
+2. Deploy the WEBAPP stack from the project root directory, execute:
 
     ```bash
       # Build App
-      npm run app:build
+      npm run webapp:build
       # Builds & Deploy App Stack
-      npm run app:deploy
+      npm run webapp:deploy
     ```
 
 3. Backup Terraform stack state from the project root directory, execute:

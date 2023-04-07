@@ -67,6 +67,14 @@
                       { name = "postgres"; }
                     ];
 
+                    # Services - PostgreSQL - Host / Listen Address
+                    # https://devenv.sh/reference/options/#servicespostgreslisten_addresses
+                    listen_addresses = "127.0.0.1";
+                    
+                    # Services - PostgreSQL - Port
+                    # https://devenv.sh/reference/options/#servicespostgresport
+                    port = 5555;
+
                     # Services - PostgreSQL - Settings
                     # https://devenv.sh/reference/options/#servicespostgressettings
                     settings = {
@@ -119,9 +127,9 @@
                   echo "Microserver:        ${pkgs.microserver.name}                   "
                   echo "Zip:                ${pkgs.zip.name}                           "
                   echo "***************************************************************"
-                  echo "PostgreSQL Server Commands:                                    "
-                  echo "start: pg_ctl -o \"-p 5555 -k $PGDATA\" start                  "
-                  echo "stop:  pg_ctl stop                                             "
+                  echo "Dev Environment Commands:                                      "
+                  echo "devenv version: devenv version output                          "
+                  echo "devenv up: starts services (e.g. PostgreSQL DB)                "
                   echo "***************************************************************"
                 '';
               }
