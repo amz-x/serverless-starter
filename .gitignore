@@ -8,7 +8,10 @@ node_modules
 .env
 
 # Nix
-.direnv/nix-*
+.devenv/*
+
+!.direnv/.gitkeep
+.direnv/*
 
 # Nix - PostgreSQL
 .pg
