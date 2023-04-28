@@ -4,6 +4,7 @@
       "charset": "utf8",
       "declaration": true,
       "experimentalDecorators": true,
+      "ignoreDeprecations": "5.0",
       "inlineSourceMap": true,
       "inlineSources": true,
       "lib": ["ES2018"],
