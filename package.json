@@ -1,6 +1,6 @@
 {
   "name": "serverless-starter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "postinstall": "npm run webapp:install && pnpm run api:install && pnpm run tf:install",
@@ -15,6 +15,7 @@
     "api:deploy": "npm run api:build && npm run deploy:api --prefix terraform",
     "tf:install": "pnpm install --dir terraform",
     "tf:backup": "npm run backup --prefix terraform",
+    "tf:destroy": "npm run destroy --prefix terraform",
     "build": "pnpm run app:build && pnpm run api:build",
     "setup": "pnpm run api:deploy && pnpm run deploy:app"
   }
