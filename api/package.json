@@ -27,7 +27,7 @@
     "@nestjs/swagger": "~6.3.0",
     "@nestjs/typeorm": "~9.0.1",
     "@node-rs/xxhash": "~1.4.0",
-    "@vendia/serverless-express": "4.10.1",
+    "@vendia/serverless-express": "4.10.3",
     "aws-lambda": "1.0.7",
     "express": "~4.18.2",
     "pg": "~8.11.0",
