@@ -1,15 +1,19 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@cdktf/provider-aws':
-    specifier: ~14.0.2
-    version: 14.0.2(cdktf@0.16.1)(constructs@10.2.9)
+    specifier: ~16.0.2
+    version: 16.0.2(cdktf@0.17.1)(constructs@10.2.69)
   cdktf:
-    specifier: ~0.16.1
-    version: 0.16.1(constructs@10.2.9)
+    specifier: ~0.17.1
+    version: 0.17.1(constructs@10.2.69)
   constructs:
-    specifier: ~10.2.9
-    version: 10.2.9
+    specifier: ~10.2.33
+    version: 10.2.69
   path:
     specifier: ~0.12.7
     version: 0.12.7
@@ -21,36 +25,36 @@ devDependencies:
 
 packages:
 
-  /@cdktf/provider-aws@14.0.2(cdktf@0.16.1)(constructs@10.2.9):
-    resolution: {integrity: sha512-7tpe3XkHTrjiSikfPLNtUFBB7M+35TAu6wgsnsKVqXe91RypMZ0cN8boBxnIm6//JcIkWnKgxg/cX65GEe7gyg==}
+  /@cdktf/provider-aws@16.0.2(cdktf@0.17.1)(constructs@10.2.69):
+    resolution: {integrity: sha512-XEkoWpgd5QQiAERgw/AlCZhpvYlR7RKpEKwLrO+SgEtu3XChSj7gw8c3EfWkdK3EHRxbEUjV03JT3J7fiaZxeA==}
     engines: {node: '>= 16.14.0'}
     peerDependencies:
-      cdktf: ^0.16.0
+      cdktf: ^0.17.0
       constructs: ^10.0.0
     dependencies:
-      cdktf: 0.16.1(constructs@10.2.9)
-      constructs: 10.2.9
+      cdktf: 0.17.1(constructs@10.2.69)
+      constructs: 10.2.69
     dev: false
 
   /@types/node@18.16.2:
     resolution: {integrity: sha512-GQW/JL/5Fz/0I8RpeBG9lKp0+aNcXEaVL71c0D2Q0QHDTFvlYKT7an0onCUXj85anv7b4/WesqdfchLc0jtsCg==}
     dev: true
 
-  /cdktf@0.16.1(constructs@10.2.9):
-    resolution: {integrity: sha512-rXbpQcZWqBSvdeYP1MsyUnB/VBkLa8dTSlJQkhRqs7MwmsRypr2xUwxYZjmiIWotadbSq7lxp60nmm4L181+7g==}
+  /cdktf@0.17.1(constructs@10.2.69):
+    resolution: {integrity: sha512-Bk9Al0z+RA3/hW372tf61QCbg2zGOVXjXlXC1taD37AfXpBgqD1fKOhJ980B93VcyMil2mIkubFC9hdrn2nziQ==}
     peerDependencies:
       constructs: ^10.0.25
     dependencies:
-      constructs: 10.2.9
+      constructs: 10.2.69
     dev: false
     bundledDependencies:
       - archiver
       - json-stable-stringify
       - semver
 
-  /constructs@10.2.9:
-    resolution: {integrity: sha512-0cv/d46sdxNuGBvZfCKBRQ5/iFdmqNZMvhh5F3j+M4mdqJryKsEmV0Bd490gQjLxb8gy+F/Pne0oCXzs9E3bIw==}
-    engines: {node: '>= 14.17.0'}
+  /constructs@10.2.69:
+    resolution: {integrity: sha512-0AiM/uQe5Uk6JVe/62oolmSN2MjbFQkOlYrM3fFGZLKuT+g7xlAI10EebFhyCcZwI2JAcWuWCmmCAyCothxjuw==}
+    engines: {node: '>= 16.14.0'}
     dev: false
 
   /inherits@2.0.3:
