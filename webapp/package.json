@@ -38,7 +38,7 @@
     "@coreui/utils": "~2.0.1",
     "@popperjs/core": "^2.11.6",
     "amazon-cognito-identity-js": "~6.1.2",
-    "aws-amplify": "~5.3.3",
+    "aws-amplify": "~5.3.4",
     "chart.js": "~3.9.1",
     "ngx-perfect-scrollbar": "~10.1.1",
     "perfect-scrollbar": "^1.5.5",
