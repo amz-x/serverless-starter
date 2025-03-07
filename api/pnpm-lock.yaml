@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@nestjs/common':
     specifier: ~9.4.0
@@ -20,11 +24,11 @@ dependencies:
     specifier: ~9.0.1
     version: 9.0.1(@nestjs/common@9.4.0)(@nestjs/core@9.4.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)(typeorm@0.3.15)
   '@node-rs/xxhash':
-    specifier: ~1.3.0
-    version: 1.3.0
+    specifier: ~1.4.0
+    version: 1.4.2
   '@vendia/serverless-express':
-    specifier: 4.10.1
-    version: 4.10.1
+    specifier: 4.10.4
+    version: 4.10.4
   aws-lambda:
     specifier: 1.0.7
     version: 1.0.7
@@ -32,8 +36,8 @@ dependencies:
     specifier: ~4.18.2
     version: 4.18.2
   pg:
-    specifier: ~8.10.0
-    version: 8.10.0
+    specifier: ~8.11.0
+    version: 8.11.2
   reflect-metadata:
     specifier: 0.1.13
     version: 0.1.13
@@ -45,7 +49,7 @@ dependencies:
     version: 7.8.1
   typeorm:
     specifier: ~0.3.15
-    version: 0.3.15(pg@8.10.0)(ts-node@10.9.1)
+    version: 0.3.15(pg@8.11.2)(ts-node@10.9.1)
 
 devDependencies:
   '@anatine/esbuild-decorators':
@@ -1544,12 +1548,12 @@ packages:
       '@nestjs/core': 9.4.0(@nestjs/common@9.4.0)(@nestjs/platform-express@9.4.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       reflect-metadata: 0.1.13
       rxjs: 7.8.1
-      typeorm: 0.3.15(pg@8.10.0)(ts-node@10.9.1)
+      typeorm: 0.3.15(pg@8.11.2)(ts-node@10.9.1)
       uuid: 8.3.2
     dev: false
 
-  /@node-rs/xxhash-android-arm-eabi@1.3.0:
-    resolution: {integrity: sha512-Wq2pFlOYs6JpPn23lcRyxjSUmVuv92w+vywuhba4Bj556r3RPYbZH49LGfu90AdcUlEYI/+RwVKjSFusz5zTPA==}
+  /@node-rs/xxhash-android-arm-eabi@1.4.2:
+    resolution: {integrity: sha512-6aonl3wNY/axTiW9jSz+Z2RduP2xCZTgX1M1ur8uCJcUVv/kkv+dEMFb3o/k19qBGntPWvGXZTj2mYO6onDr/g==}
     engines: {node: '>= 12'}
     cpu: [arm]
     os: [android]
@@ -1557,8 +1561,8 @@ packages:
     dev: false
     optional: true
 
-  /@node-rs/xxhash-android-arm64@1.3.0:
-    resolution: {integrity: sha512-dw77/P7jHgtZzReGRgqc2PS6wmfCn/1PVKVQZW/b/6/10E4EiDWgiD4U6BxSN+2InePnsfb/IRjJ9dvkmiNHVg==}
+  /@node-rs/xxhash-android-arm64@1.4.2:
+    resolution: {integrity: sha512-Uhwsk3mp++Op2Sl/TzR1VfFqHx5sGMAwQGhQKThc/w8QSrDNfWKd1R9rjohIDWeNbmRguUCDPEKEOZwGewWacw==}
     engines: {node: '>= 12'}
     cpu: [arm64]
     os: [android]
@@ -1566,8 +1570,8 @@ packages:
     dev: false
     optional: true
 
-  /@node-rs/xxhash-darwin-arm64@1.3.0:
-    resolution: {integrity: sha512-2SKiITOr5Lt35vv2PpdcKV7mhdfudR0Cheuk9dj1fBx6hXrl9lDf5Yu+RWPC1j8CskSYbxFqWQC1iSZJD1MFcw==}
+  /@node-rs/xxhash-darwin-arm64@1.4.2:
+    resolution: {integrity: sha512-0JYLJQ9C8prYbPPr3WlScYnAgIxLwitUwx2FnxNmBNH9bCDFoMdFXylzlxdYPHEYcXMsvWWcOnf9cESBH0WqzA==}
     engines: {node: '>= 12'}
     cpu: [arm64]
     os: [darwin]
@@ -1575,8 +1579,8 @@ packages:
     dev: false
     optional: true
 
-  /@node-rs/xxhash-darwin-x64@1.3.0:
-    resolution: {integrity: sha512-V4D05YuiI7Hwn1L8IKr3cEhERBEd+mFte0aKM1rnlMxFV4IBtdevM8asXv4hKcJTtV+4h0QAVpTydb4+MW21KQ==}
+  /@node-rs/xxhash-darwin-x64@1.4.2:
+    resolution: {integrity: sha512-9CMuC7PZqHDaPCnOUrW6AIL+2gzLq22klGKBRXHXVfUELuNEqp7N0HyHheoQ99U0otCNnsA54zkfBw9cL1pcIA==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [darwin]
@@ -1584,8 +1588,8 @@ packages:
     dev: false
     optional: true
 
-  /@node-rs/xxhash-freebsd-x64@1.3.0:
-    resolution: {integrity: sha512-/tffg1aJ/M2XDwCKVOkUs/J3aCarZzTJbTg26mi4T6E9YqSjpCNIkQidJPZT2VEIw2xqU/Rlj+ccar39vVk2ww==}
+  /@node-rs/xxhash-freebsd-x64@1.4.2:
+    resolution: {integrity: sha512-pPvuivkR3oyZ6DocgX6LSN2GpgF6Z4DK8M0UwDlY5P2wAUoi1JIOJBLjOrQmiaCUIIGCTTDBKTPwgIDUh6A7mg==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [freebsd]
@@ -1593,8 +1597,8 @@ packages:
     dev: false
     optional: true
 
-  /@node-rs/xxhash-linux-arm-gnueabihf@1.3.0:
-    resolution: {integrity: sha512-zjpHjOonCdBb+ccAtHO3HShc7sXKe1PsMWY9kklAX1Gxv+MRok0+ZzmLvO878IRExgKgMQESG27y+gey15yu8Q==}
+  /@node-rs/xxhash-linux-arm-gnueabihf@1.4.2:
+    resolution: {integrity: sha512-LzI9WMW2scTG3/87/9j+oE0njz1o/2s7c61h1rEZyP1WBGA1cZ2xn3wAnwqFOPKE3s7QvONXoYjMMqa+BtDNNg==}
     engines: {node: '>= 12'}
     cpu: [arm]
     os: [linux]
@@ -1602,8 +1606,8 @@ packages:
     dev: false
     optional: true
 
-  /@node-rs/xxhash-linux-arm64-gnu@1.3.0:
-    resolution: {integrity: sha512-Ayr72tbWAsroADMBNnV/cuDFgwKDKXxFoDGdGrtL11A4Fyn39dQwsh3hgL2iO+JeLHIqsfSej+djBE5XaLQGjQ==}
+  /@node-rs/xxhash-linux-arm64-gnu@1.4.2:
+    resolution: {integrity: sha512-BeOlxfDzdnYRfK0nEyG8gpA6AGpamZVe2FNBl96xB5eVYiPp8PhIFLFsfoPURqa/Abm8+JV+QHzf3sngD1Gr+Q==}
     engines: {node: '>= 12'}
     cpu: [arm64]
     os: [linux]
@@ -1611,8 +1615,8 @@ packages:
     dev: false
     optional: true
 
-  /@node-rs/xxhash-linux-arm64-musl@1.3.0:
-    resolution: {integrity: sha512-CkvDh0+gAyTuy3J3jZa5mUO64GV9701VC5iOsd5IN4iJz9DYiv/C+7ci9d0CwcjsWm3/oNM35K1IlX52xPfQdw==}
+  /@node-rs/xxhash-linux-arm64-musl@1.4.2:
+    resolution: {integrity: sha512-u6l7mE5jmEWwUghZbfVHhhN9pMDkE0pjxjZu52bd8Ohk8LkbFDOJVNG2AWkWkjdInP31PmhvtCgE2laKCCQeRQ==}
     engines: {node: '>= 12'}
     cpu: [arm64]
     os: [linux]
@@ -1620,8 +1624,8 @@ packages:
     dev: false
     optional: true
 
-  /@node-rs/xxhash-linux-x64-gnu@1.3.0:
-    resolution: {integrity: sha512-F6wqncSd+Cp+Hfaumo0hrb5TIKdJtNCOGRCmeKH7XmJu5iDzinIPYb0TLKNlpfIKVlMT2xE+PWq3YF4K1+zgyw==}
+  /@node-rs/xxhash-linux-x64-gnu@1.4.2:
+    resolution: {integrity: sha512-h3FUuuDBGdJ42HgA9lxX9cNSussF1lO/04OKXkVuJGRPR6mBCqBZ9SPNhzSk2PyYEqHimXIBYr+CdDRCS1xsfQ==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [linux]
@@ -1629,8 +1633,8 @@ packages:
     dev: false
     optional: true
 
-  /@node-rs/xxhash-linux-x64-musl@1.3.0:
-    resolution: {integrity: sha512-YdUrXxSMk20Hn/16DClyerpk4vWuHrEUOMK6Vuov+xYHehkd33MFDUyTg0O5//VPUWP49FS/wzDNtSHQVEJNcg==}
+  /@node-rs/xxhash-linux-x64-musl@1.4.2:
+    resolution: {integrity: sha512-W3/lMn1IBeTAcYVJEycxeyiMLD05M7OGsCZLAE0PB/t8dC+tH5jayVrYRhj+ZznK3V3pZfZb7cCVvZD2eCMb3g==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [linux]
@@ -1638,8 +1642,8 @@ packages:
     dev: false
     optional: true
 
-  /@node-rs/xxhash-win32-arm64-msvc@1.3.0:
-    resolution: {integrity: sha512-qwf12QVJNkaLvgCza05bJM1DC2xHRh/UUG6kE6tE+x+a3rP4008V0i5ns6fl0UMM+gts1uHUpW6dPIWkVqq86Q==}
+  /@node-rs/xxhash-win32-arm64-msvc@1.4.2:
+    resolution: {integrity: sha512-53WhZY+khV/d8qmbLimCLXptq6/r1KD61Hi8I96KWxP6WiDl7Himhi5Pm2SbA2YK1WA3xPCaHj/LkPRks8Zi2g==}
     engines: {node: '>= 12'}
     cpu: [arm64]
     os: [win32]
@@ -1647,8 +1651,8 @@ packages:
     dev: false
     optional: true
 
-  /@node-rs/xxhash-win32-ia32-msvc@1.3.0:
-    resolution: {integrity: sha512-bFVThe4OH1gbT0MXD+F3cDwEeVVjnnb3BazkkB8lH0zOwSQANc1qunftivSeYTiGupLvw/xIE0eelXjDv6w1hQ==}
+  /@node-rs/xxhash-win32-ia32-msvc@1.4.2:
+    resolution: {integrity: sha512-F1gWrwrNmw9rjxGphsDw9iGttXDEaGnAAj9U14+9n3WREMsmCRsKfoSZ41ln9KHH8hEABsxL15Tiutm++S3LmA==}
     engines: {node: '>= 12'}
     cpu: [ia32]
     os: [win32]
@@ -1656,8 +1660,8 @@ packages:
     dev: false
     optional: true
 
-  /@node-rs/xxhash-win32-x64-msvc@1.3.0:
-    resolution: {integrity: sha512-hIyWzIAGGRF/WFdJd56+VgnZ37V/PzGv1GIkLEv/iDbjpap0FJpY6MBXB/WERwrBgy9QGoE3DXfT00uKCxN25A==}
+  /@node-rs/xxhash-win32-x64-msvc@1.4.2:
+    resolution: {integrity: sha512-d7CUKK3IFYbED/0w6RosCKWL/RODfmA6yMfQdu3BZvh9Y8GTjRLE+DAIOOklP9Rb9qkKYSyzp2ALrHSkrHdRXQ==}
     engines: {node: '>= 12'}
     cpu: [x64]
     os: [win32]
@@ -1665,23 +1669,23 @@ packages:
     dev: false
     optional: true
 
-  /@node-rs/xxhash@1.3.0:
-    resolution: {integrity: sha512-uy+/zGE0p17e9qbeo6aul/TaRBpRr9p7oDgSgkqduCWDr2vFGqdJuKM8ENmG3uuE9B6CNXhwf4Mho5xZ2kmWFQ==}
+  /@node-rs/xxhash@1.4.2:
+    resolution: {integrity: sha512-PvFTpG5z8tdXdZNkHUpjHDnBAKLxn6Xwp4yH8nfuVA2NcO3J970IHnm9yWcs9VVNwLr2aJx0lb8OvBAuLUNiEw==}
     engines: {node: '>= 12'}
     optionalDependencies:
-      '@node-rs/xxhash-android-arm-eabi': 1.3.0
-      '@node-rs/xxhash-android-arm64': 1.3.0
-      '@node-rs/xxhash-darwin-arm64': 1.3.0
-      '@node-rs/xxhash-darwin-x64': 1.3.0
-      '@node-rs/xxhash-freebsd-x64': 1.3.0
-      '@node-rs/xxhash-linux-arm-gnueabihf': 1.3.0
-      '@node-rs/xxhash-linux-arm64-gnu': 1.3.0
-      '@node-rs/xxhash-linux-arm64-musl': 1.3.0
-      '@node-rs/xxhash-linux-x64-gnu': 1.3.0
-      '@node-rs/xxhash-linux-x64-musl': 1.3.0
-      '@node-rs/xxhash-win32-arm64-msvc': 1.3.0
-      '@node-rs/xxhash-win32-ia32-msvc': 1.3.0
-      '@node-rs/xxhash-win32-x64-msvc': 1.3.0
+      '@node-rs/xxhash-android-arm-eabi': 1.4.2
+      '@node-rs/xxhash-android-arm64': 1.4.2
+      '@node-rs/xxhash-darwin-arm64': 1.4.2
+      '@node-rs/xxhash-darwin-x64': 1.4.2
+      '@node-rs/xxhash-freebsd-x64': 1.4.2
+      '@node-rs/xxhash-linux-arm-gnueabihf': 1.4.2
+      '@node-rs/xxhash-linux-arm64-gnu': 1.4.2
+      '@node-rs/xxhash-linux-arm64-musl': 1.4.2
+      '@node-rs/xxhash-linux-x64-gnu': 1.4.2
+      '@node-rs/xxhash-linux-x64-musl': 1.4.2
+      '@node-rs/xxhash-win32-arm64-msvc': 1.4.2
+      '@node-rs/xxhash-win32-ia32-msvc': 1.4.2
+      '@node-rs/xxhash-win32-x64-msvc': 1.4.2
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
@@ -2570,8 +2574,8 @@ packages:
       vite: 4.1.4(@types/node@18.16.2)
     dev: true
 
-  /@vendia/serverless-express@4.10.1:
-    resolution: {integrity: sha512-8FM/GnQ8bbp1fynAWLGzNIy3Hyhoevixwh2Aj8qBPpw7rkbWZ1I7RC2XhZZaTZo/1JTDlff4cDDmkgY0CzUV7g==}
+  /@vendia/serverless-express@4.10.4:
+    resolution: {integrity: sha512-OH2cX+LqtrayCIkHAkShiLnvrgqGDvwIQEex5dHc/uJitBQjIz3q7dZtfU7cZ5vcR9Vkide5xJQDBEMbXoWLeA==}
     engines: {node: '>=12'}
     dev: false
 
@@ -6431,7 +6435,7 @@ packages:
       parse5: 6.0.1
       saxes: 5.0.1
       symbol-tree: 3.2.4
-      tough-cookie: 4.1.2
+      tough-cookie: 4.1.3
       w3c-hr-time: 1.0.2
       w3c-xmlserializer: 2.0.0
       webidl-conversions: 6.1.0
@@ -7295,8 +7299,14 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /pg-connection-string@2.5.0:
-    resolution: {integrity: sha512-r5o/V/ORTA6TmUnyWZR9nCj1klXCO2CEKNRlVuJptZe85QuhFayC7WeMic7ndayT5IRIR0S0xFxFi2ousartlQ==}
+  /pg-cloudflare@1.1.1:
+    resolution: {integrity: sha512-xWPagP/4B6BgFO+EKz3JONXv3YDgvkbVrGw2mTo3D6tVDQRh1e7cqVGvyR3BE+eQgAvx1XhW/iEASj4/jCWl3Q==}
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /pg-connection-string@2.6.2:
+    resolution: {integrity: sha512-ch6OwaeaPYcova4kKZ15sbJ2hKb/VP48ZD2gE7i1J+L4MspCtBMAx8nMgz7bksc7IojCIIWuEhHibSMFH8m8oA==}
     dev: false
 
   /pg-int8@1.0.1:
@@ -7304,12 +7314,12 @@ packages:
     engines: {node: '>=4.0.0'}
     dev: false
 
-  /pg-pool@3.6.0(pg@8.10.0):
-    resolution: {integrity: sha512-clFRf2ksqd+F497kWFyM21tMjeikn60oGDmqMT8UBrynEwVEX/5R5xd2sdvdo1cZCFlguORNpVuqxIj+aK4cfQ==}
+  /pg-pool@3.6.1(pg@8.11.2):
+    resolution: {integrity: sha512-jizsIzhkIitxCGfPRzJn1ZdcosIt3pz9Sh3V01fm1vZnbnCMgmGl5wvGGdNN2EL9Rmb0EcFoCkixH4Pu+sP9Og==}
     peerDependencies:
       pg: '>=8.0'
     dependencies:
-      pg: 8.10.0
+      pg: 8.11.2
     dev: false
 
   /pg-protocol@1.6.0:
@@ -7327,8 +7337,8 @@ packages:
       postgres-interval: 1.2.0
     dev: false
 
-  /pg@8.10.0:
-    resolution: {integrity: sha512-ke7o7qSTMb47iwzOSaZMfeR7xToFdkE71ifIipOAAaLIM0DYzfOAXlgFFmYUIE2BcJtvnVlGCID84ZzCegE8CQ==}
+  /pg@8.11.2:
+    resolution: {integrity: sha512-l4rmVeV8qTIrrPrIR3kZQqBgSN93331s9i6wiUiLOSk0Q7PmUxZD/m1rQI622l3NfqBby9Ar5PABfS/SulfieQ==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
       pg-native: '>=3.0.1'
@@ -7338,11 +7348,13 @@ packages:
     dependencies:
       buffer-writer: 2.0.0
       packet-reader: 1.0.0
-      pg-connection-string: 2.5.0
-      pg-pool: 3.6.0(pg@8.10.0)
+      pg-connection-string: 2.6.2
+      pg-pool: 3.6.1(pg@8.11.2)
       pg-protocol: 1.6.0
       pg-types: 2.2.0
       pgpass: 1.0.5
+    optionalDependencies:
+      pg-cloudflare: 1.1.1
     dev: false
 
   /pgpass@1.0.5:
@@ -8461,8 +8473,8 @@ packages:
       ieee754: 1.2.1
     dev: true
 
-  /tough-cookie@4.1.2:
-    resolution: {integrity: sha512-G9fqXWoYFZgTc2z8Q5zaHy/vJMjm+WV0AkAeHxVCQiEB1b+dGvWzFW6QV07cY5jQ5gRkeid2qIkzkxUnmoQZUQ==}
+  /tough-cookie@4.1.3:
+    resolution: {integrity: sha512-aX/y5pVRkfRnfmuX+OdbSdXvPe6ieKX/G2s7e98f4poJHnqH3281gDPm/metm6E/WRamfx7WC4HUqkWHfQHprw==}
     engines: {node: '>=6'}
     dependencies:
       psl: 1.9.0
@@ -8671,7 +8683,7 @@ packages:
   /typedarray@0.0.6:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
 
-  /typeorm@0.3.15(pg@8.10.0)(ts-node@10.9.1):
+  /typeorm@0.3.15(pg@8.11.2)(ts-node@10.9.1):
     resolution: {integrity: sha512-R4JSw8QjDP1W+ypeRz/XrCXIqubrLSnNAzJAp9EQSQIPHTv+YmUHZis8g08lOwFpuhqL9m8jkPSz8GWEKlU/ow==}
     engines: {node: '>= 12.9.0'}
     hasBin: true
@@ -8738,7 +8750,7 @@ packages:
       dotenv: 16.0.3
       glob: 8.1.0
       mkdirp: 2.1.5
-      pg: 8.10.0
+      pg: 8.11.2
       reflect-metadata: 0.1.13
       sha.js: 2.4.11
       ts-node: 10.9.1(@swc/core@1.3.40)(@types/node@18.16.2)(typescript@4.9.5)
